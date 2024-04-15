@@ -19,8 +19,8 @@ app.get('/cs212/homework/8', (req, res) => {
 
 app.post('/cs212/homework/8', (req, res) => {
     const { adjective, pluralNoun, personName, verb, noun } = req.body;
-    const madLib = `Today, I saw a ${adjective} ${pluralNoun} which made me think of ${personName}. 
-                    Then I decided to ${verb} by the ${noun}.`;
+    const madLib = "Yesterday, I found an ${adjective} ${pluralNoun} that reminded me of ${personName}. 
+                    So, I chose to ${verb} near the ${noun}.";
 
     res.send(madLib);
 });
