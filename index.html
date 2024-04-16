@@ -24,7 +24,9 @@
             max-width: 350px;
             width: 100%;
         }
-
+        h1,p{
+            font-family: 'Noto Sans Bengali', sans-serif; 
+        }
         h2 {
             text-align: center;
             color: black;
@@ -92,6 +94,46 @@
         <input type="submit" value="Create Mad Lib">
     </form>
     </div>
+    <div>
+    <h1>ADDENDUM</h1>
+    <h2><b>HTML Frontend:</b></h2>
+    <p>
+        <ul>
+            <li>An HTML form is created for submitting a Mad Lib story. Users enter various parts of speech (adjective, plural noun, person's name, verb, noun), which are then sent to the server.</li>
+            <li>CSS is used to style the form for aesthetics and usability, including responsive input fields and buttons.</li>
+        </ul>
+    </p>
+    <h2><b>Server Setup:</b></h2>
+    <p>
+        <ul>
+            <li>The server is set up with Express, a popular Node.js framework for building web applications and APIs.</li>
+            <li>Routes are defined to serve the HTML form (GET request) and handle the form submission (POST request).</li>
+            <li>The POST route processes the form data and creates a Mad Lib based on the user's inputs.</li>
+        </ul>
+    </p>
+    <h2><b>Package Configuration:</b></h2>
+    <p>
+        <ul>
+            <li>The package.json and package-lock.json files specify dependencies and other configurations required to run the application.</li>
+            <li>The project relies on Express version 4.18.2, and the server is started using a start script defined in package.json.</li>
+        </ul>
+    </p>
+    <h2><b>File Structure:</b></h2>
+    <p>
+        <ul>
+            <li>The use of the path module indicates that HTML files are served from a directory relative to the server script, ensuring correct file location regardless of the execution context.</li>
+        </ul>
+    </p>
+    <h2><b>Potential Improvements/Additions:</b></h2>
+    <p>
+        <ul>
+            <li>Error Handling: Implementing error handling on the server side to manage cases where the form data is not sent correctly.</li>
+            <li>User Feedback: Adding client-side JavaScript to validate inputs before submission and provide immediate feedback to users.</li>
+            <li>Enhancements: Considering expanding the application to support multiple Mad Lib templates or storing user-generated Mad Libs in a database for future retrieval.</li>
+        </ul>
+    </p>
+</div>
+
     <div>
     <footer>
         <p>Last updated: 
